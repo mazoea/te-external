@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Configuration">
+    <BuildLogFile>$(OutDir)logs\$(ProjectName)$(MazoeaName).log</BuildLogFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <BrowseInformationFile>$(OutDir)bsc\$(Configuration)\$(Platform)\$(ProjectName)\</BrowseInformationFile>
+      <ProgramDataBaseFileName>$(OutDir)pdb\$(ProjectName)$(MazoeaName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Bscmake>
+      <OutputFile>$(OutDir)bsc\$(Configuration)\$(Platform)\$(ProjectName)\</OutputFile>
+    </Bscmake>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <ProgramDatabaseFile>$(OutDir)pdb\$(ProjectName)$(MazoeaName).pdb</ProgramDatabaseFile>
+      <MapFileName>$(OutDir)maps\$(ProjectName)$(MazoeaName).map</MapFileName>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

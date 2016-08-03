@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)\include\freetype;$(SolutionDir)\include\zlib;$(SolutionDir)\include\libtiff;$(SolutionDir)\include\libpng;$(SolutionDir)\include\jpeg;$(SolutionDir)\include\giflib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs\freetype;$(SolutionDir)\libs\zlib;$(SolutionDir)\libs\libtiff;$(SolutionDir)\libs\libpng;$(SolutionDir)\libs\jpeg;$(SolutionDir)\libs\giflib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>giflib$(MazoeaName).lib;libjpeg$(MazoeaName).lib;libpng$(MazoeaName).lib;libtiff$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>giflib$(MazoeaName).lib;libjpeg$(MazoeaName).lib;libpng$(MazoeaName).lib;libtiff$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+</Project>
