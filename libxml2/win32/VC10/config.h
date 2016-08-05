@@ -20,6 +20,8 @@
 #define HAVE_FCNTL_H
 #include <io.h>
 #include <direct.h>
+#define SEND_ARG2_CAST
+#define GETHOSTBYNAME_ARG_CAST
 #endif
 
 #include <libxml/xmlversion.h>
