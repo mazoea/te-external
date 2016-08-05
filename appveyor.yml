@@ -4,7 +4,7 @@ platform:
   - x86
   - x64
 
-clone_folder: c:\mazoea\installation\
+clone_folder: c:\mazoea\installation\te-external
 
 environment:
   my_var1: value1
@@ -14,12 +14,14 @@ matrix:
 
 before_build:
   - cd %APPVEYOR_BUILD_FOLDER%
-  - dir
+  - xcopy _vsprops-base ..\vsprops-base /I
+  - python create_links.py
   - cd ..
   - git clone --depth=1 https://github.com/mazoea/te-builder.git te-builder
-  - cd te-builder
-  - if %platform%==Win32 set vcplatform=Win32
-  - if %platform%==Win64 set vcplatform=x64
+  - cd te-builder\src
+  - python main.py --settings=externals_only.json
+  - echo if %platform%==Win32 set vcplatform=Win32
+  - echo if %platform%==Win64 set vcplatform=x64
 
 build_script:
   - mkdir build
