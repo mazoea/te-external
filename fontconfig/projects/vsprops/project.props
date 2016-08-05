@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)\include\libiconv;$(SolutionDir)\include\libxml2;$(SolutionDir)\include\freetype;$(SolutionDir)\include\freetype\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs\libiconv;$(SolutionDir)\libs\libxml2;$(SolutionDir)\libs\freetype;$(SolutionDir)\libs\zlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <PreprocessorDefinitions>FcPublic=__declspec(dllexport);USING_STATIC_LIBICONV;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlib$(MazoeaName).lib;Ws2_32.lib;freetype$(MazoeaName).lib;libiconv$(MazoeaName).lib;libxml2$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>
