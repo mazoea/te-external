@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)..\;$(SolutionDir)..\pango;$(SolutionDir)include\glib\;$(SolutionDir)include\glib\glib;$(SolutionDir)include\cairo;$(SolutionDir)include\fontconfig;$(SolutionDir)include\harfbuzz;$(SolutionDir)include\freetype;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\libs\pixman;$(SolutionDir)\libs\cairo;$(SolutionDir)\libs\glib;$(SolutionDir)\libs\fontconfig;$(SolutionDir)\libs\harfbuzz;$(SolutionDir)\libs\freetype;$(SolutionDir)\libs\libxml2;$(SolutionDir)\libs\libiconv;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <PreprocessorDefinitions>PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;G_LOG_DOMAIN="Pango";HAVE_CONFIG_H;SYSCONFDIR="./etc";LIBDIR="./lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>pixman$(MazoeaName).lib;libiconv$(MazoeaName).lib;Ws2_32.lib;libxml2$(MazoeaName).lib;Usp10.lib;freetype$(MazoeaName).lib;cairo$(MazoeaName).lib;fontconfig$(MazoeaName).lib;glib$(MazoeaName).lib;gobject$(MazoeaName).lib;gthread$(MazoeaName).lib;harfbuzz$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>
