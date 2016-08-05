@@ -546,12 +546,12 @@ hb_ft_face_create (FT_Face           ft_face,
  * Return value: (transfer full): 
  * Since: 0.9.38
  **/
-hb_face_t *
-hb_ft_face_create_referenced (FT_Face ft_face)
-{
-  FT_Reference_Face (ft_face);
-  return hb_ft_face_create (ft_face, (hb_destroy_func_t) _hb_ft_face_destroy);
-}
+//hb_face_t *
+//hb_ft_face_create_referenced (FT_Face ft_face)
+//{
+//  FT_Reference_Face (ft_face);
+//  return hb_ft_face_create (ft_face, (hb_destroy_func_t) _hb_ft_face_destroy);
+//}
 
 static void
 hb_ft_face_finalize (FT_Face ft_face)
@@ -626,12 +626,12 @@ hb_ft_font_create (FT_Face           ft_face,
  * Return value: (transfer full): 
  * Since: 0.9.38
  **/
-hb_font_t *
-hb_ft_font_create_referenced (FT_Face ft_face)
-{
-  FT_Reference_Face (ft_face);
-  return hb_ft_font_create (ft_face, (hb_destroy_func_t) _hb_ft_face_destroy);
-}
+//hb_font_t *
+//hb_ft_font_create_referenced (FT_Face ft_face)
+//{
+//  FT_Reference_Face (ft_face);
+//  return hb_ft_font_create (ft_face, (hb_destroy_func_t) _hb_ft_face_destroy);
+//}
 
 
 /* Thread-safe, lock-free, FT_Library */
