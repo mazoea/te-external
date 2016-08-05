@@ -343,8 +343,8 @@ ffi_call_win64(unsigned int (*)(char *, extended_cif *), extended_cif *,
 extern void
 ffi_call_win32(unsigned int (*)(char *, extended_cif *), extended_cif *,
                unsigned, unsigned, unsigned, unsigned *, void (*fn)(void));
-extern void ffi_call_SYSV(void (*)(char *, extended_cif *), extended_cif *,
-                          unsigned, unsigned, unsigned *, void (*fn)(void));
+//extern void ffi_call_SYSV(void (*)(char *, extended_cif *), extended_cif *,
+//                          unsigned, unsigned, unsigned *, void (*fn)(void));
 #endif
 
 void ffi_call(ffi_cif *cif, void (*fn)(void), void *rvalue, void **avalue)

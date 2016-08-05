@@ -46,7 +46,7 @@
 #include <sunmedia_types.h>
 #define UINT128 __m128i
 #else
-#define UINT128 __int128_t
+#define UINT128 __int64 //__int128_t
 #endif
 #endif
 
@@ -64,8 +64,8 @@ struct register_args
   union big_int_union sse[MAX_SSE_REGS];
 };
 
-extern void ffi_call_unix64 (void *args, unsigned long bytes, unsigned flags,
-			     void *raddr, void (*fnaddr)(void), unsigned ssecount);
+//extern void ffi_call_unix64 (void *args, unsigned long bytes, unsigned flags,
+//			     void *raddr, void (*fnaddr)(void), unsigned ssecount);
 
 /* All reference to register classes here is identical to the code in
    gcc/config/i386/i386.c. Do *not* change one without the other.  */
@@ -522,12 +522,12 @@ ffi_call (ffi_cif *cif, void (*fn)(void), void *rvalue, void **avalue)
 	}
     }
 
-  ffi_call_unix64 (stack, cif->bytes + sizeof (struct register_args),
-		   cif->flags, rvalue, fn, ssecount);
+  //ffi_call_unix64 (stack, cif->bytes + sizeof (struct register_args),
+		//   cif->flags, rvalue, fn, ssecount);
 }
 
 
-extern void ffi_closure_unix64(void);
+//extern void ffi_closure_unix64(void);
 
 ffi_status
 ffi_prep_closure_loc (ffi_closure* closure,
@@ -548,8 +548,8 @@ ffi_prep_closure_loc (ffi_closure* closure,
   tramp = (volatile unsigned short *) &closure->tramp[0];
 
   tramp[0] = 0xbb49;		/* mov <code>, %r11	*/
-  *((unsigned long long * volatile) &tramp[1])
-    = (unsigned long) ffi_closure_unix64;
+  //*((unsigned long long * volatile) &tramp[1])
+  //  = (unsigned long) ffi_closure_unix64;
   tramp[5] = 0xba49;		/* mov <data>, %r10	*/
   *((unsigned long long * volatile) &tramp[6])
     = (unsigned long) codeloc;
