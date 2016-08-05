@@ -47,3 +47,4 @@ ipch
 
 
 icu/source/stubdata/
+!_vsprops-base/*
