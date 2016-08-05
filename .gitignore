@@ -46,4 +46,4 @@ ipch
 !*/projects/libs/__create_links.bat
 
 
-icu/source/stubdata/stubdatabuilt.txt
+icu/source/stubdata/
