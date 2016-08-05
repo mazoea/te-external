@@ -19,7 +19,13 @@ extern "C" {
 #define GIF_OK      1
 
 #include <stddef.h>
-#include <stdbool.h>
+#ifdef _WIN32
+    typedef int bool;
+    #define false 0
+    #define true 1
+#else
+    #include <stdbool.h>
+#endif
 
 #define GIF_STAMP "GIFVER"          /* First chars in file - GIF stamp.  */
 #define GIF_STAMP_LEN sizeof(GIF_STAMP) - 1

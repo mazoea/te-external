@@ -101,11 +101,17 @@ Notes:
 have the same length and format, i.e. sizeof(int *) == sizeof(char *).
 
 **************************************************************************/
-
+#ifdef _WIN32
+    typedef int bool;
+    #define false 0
+    #define true 1
+#else
+    #include <stdbool.h>
+#endif
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
+//#include <stdbool.h>
 #include <stdarg.h>
  
 #include "getarg.h"

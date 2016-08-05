@@ -8,9 +8,10 @@ giftext - dump GIF pixels and metadata as text
 #include <stdio.h>
 #include <ctype.h>
 #include <fcntl.h>
-#include <stdbool.h>
+//#include <stdbool.h>
 
 #ifdef _WIN32
+#define snprintf _snprintf
 #include <io.h>
 #endif /* _WIN32 */
 
