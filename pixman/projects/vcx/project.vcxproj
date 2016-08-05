@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-MTDLL|Win32">
+      <Configuration>Debug-MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MTDLL|x64">
+      <Configuration>Debug-MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MT|Win32">
+      <Configuration>Debug-MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MT|x64">
+      <Configuration>Debug-MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MTDLL|Win32">
+      <Configuration>Release-MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MTDLL|x64">
+      <Configuration>Release-MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MT|Win32">
+      <Configuration>Release-MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MT|x64">
+      <Configuration>Release-MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pixman\pixman-access-accessors.c" />
+    <ClCompile Include="..\..\pixman\pixman-access.c" />
+    <ClCompile Include="..\..\pixman\pixman-arm.c" />
+    <ClCompile Include="..\..\pixman\pixman-bits-image.c" />
+    <ClCompile Include="..\..\pixman\pixman-combine-float.c" />
+    <ClCompile Include="..\..\pixman\pixman-combine32.c" />
+    <ClCompile Include="..\..\pixman\pixman-conical-gradient.c" />
+    <ClCompile Include="..\..\pixman\pixman-edge-accessors.c" />
+    <ClCompile Include="..\..\pixman\pixman-edge.c" />
+    <ClCompile Include="..\..\pixman\pixman-fast-path.c" />
+    <ClCompile Include="..\..\pixman\pixman-filter.c" />
+    <ClCompile Include="..\..\pixman\pixman-general.c" />
+    <ClCompile Include="..\..\pixman\pixman-glyph.c" />
+    <ClCompile Include="..\..\pixman\pixman-gradient-walker.c" />
+    <ClCompile Include="..\..\pixman\pixman-image.c" />
+    <ClCompile Include="..\..\pixman\pixman-implementation.c" />
+    <ClCompile Include="..\..\pixman\pixman-linear-gradient.c" />
+    <ClCompile Include="..\..\pixman\pixman-matrix.c" />
+    <ClCompile Include="..\..\pixman\pixman-mips.c" />
+    <ClCompile Include="..\..\pixman\pixman-mmx.c" />
+    <ClCompile Include="..\..\pixman\pixman-noop.c" />
+    <ClCompile Include="..\..\pixman\pixman-ppc.c" />
+    <ClCompile Include="..\..\pixman\pixman-radial-gradient.c" />
+    <ClCompile Include="..\..\pixman\pixman-region16.c" />
+    <ClCompile Include="..\..\pixman\pixman-region32.c" />
+    <ClCompile Include="..\..\pixman\pixman-solid-fill.c" />
+    <ClCompile Include="..\..\pixman\pixman-sse2.c" />
+    <ClCompile Include="..\..\pixman\pixman-ssse3.c" />
+    <ClCompile Include="..\..\pixman\pixman-timer.c" />
+    <ClCompile Include="..\..\pixman\pixman-trap.c" />
+    <ClCompile Include="..\..\pixman\pixman-utils.c" />
+    <ClCompile Include="..\..\pixman\pixman-x86.c" />
+    <ClCompile Include="..\..\pixman\pixman.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\config.h" />
+    <ClInclude Include="..\..\pixman\loongson-mmintrin.h" />
+    <ClInclude Include="..\..\pixman\pixman-accessor.h" />
+    <ClInclude Include="..\..\pixman\pixman-combine32.h" />
+    <ClInclude Include="..\..\pixman\pixman-compiler.h" />
+    <ClInclude Include="..\..\pixman\pixman-edge-imp.h" />
+    <ClInclude Include="..\..\pixman\pixman-inlines.h" />
+    <ClInclude Include="..\..\pixman\pixman-private.h" />
+    <ClInclude Include="..\..\pixman\pixman-version.h" />
+    <ClInclude Include="..\..\pixman\pixman.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D97EECE-3548-42C5-9C78-BA67BBB9F526}</ProjectGuid>
+    <ProjectName>pixman</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/lib.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/deps/dep-zlib.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
