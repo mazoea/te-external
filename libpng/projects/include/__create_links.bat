@@ -1,0 +1,3 @@
+junction zlib ..\..\..\zlib\
+
+pause
