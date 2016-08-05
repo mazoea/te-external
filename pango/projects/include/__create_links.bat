@@ -4,4 +4,6 @@ junction freetype ..\..\..\..\te-external\freetype\include
 junction fontconfig ..\..\..\..\te-external\fontconfig
 junction harfbuzz ..\..\..\..\te-external\harfbuzz\src
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1

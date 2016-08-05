@@ -1,3 +1,5 @@
 junction zlib ..\..\..\zlib\
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1

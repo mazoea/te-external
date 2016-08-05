@@ -7,4 +7,6 @@ junction harfbuzz ..\..\..\..\te-external\harfbuzz\libs
 junction libiconv ..\..\..\..\te-external\libiconv\libs
 junction pixman ..\..\..\..\te-external\pixman\libs
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1

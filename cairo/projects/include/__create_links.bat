@@ -7,4 +7,6 @@ junction giflib ..\..\..\..\te-external\giflib\lib
 junction pixman ..\..\..\..\te-external\pixman\pixman
 junction fontconfig ..\..\..\..\te-external\fontconfig
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1

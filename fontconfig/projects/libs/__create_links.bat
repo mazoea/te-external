@@ -3,4 +3,6 @@ junction libiconv "..\..\..\libiconv\libs"
 junction libxml2 "..\..\..\libxml2\libs"
 junction zlib "..\..\..\zlib\libs"
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1

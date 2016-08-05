@@ -7,4 +7,6 @@ junction pixman ..\..\..\..\te-external\pixman\libs
 junction fontconfig ..\..\..\..\te-external\fontconfig\libs
 junction freetype ..\..\..\..\te-external\freetype\libs
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1

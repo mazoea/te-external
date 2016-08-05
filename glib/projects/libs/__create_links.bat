@@ -1,4 +1,6 @@
 junction zlib ..\..\..\..\te-external\zlib\libs
 junction libffi ..\..\..\..\te-external\libffi\libs
 
-pause
+IF "%1"=="nopause" GOTO No1
+    pause
+:No1
