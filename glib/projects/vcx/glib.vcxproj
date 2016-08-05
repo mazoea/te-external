@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-MTDLL|Win32">
+      <Configuration>Debug-MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MTDLL|x64">
+      <Configuration>Debug-MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MT|Win32">
+      <Configuration>Debug-MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MT|x64">
+      <Configuration>Debug-MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MTDLL|Win32">
+      <Configuration>Release-MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MTDLL|x64">
+      <Configuration>Release-MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MT|Win32">
+      <Configuration>Release-MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MT|x64">
+      <Configuration>Release-MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12BCA020-EABF-429E-876A-A476BC9C10C0}</ProjectGuid>
+    <RootNamespace>glib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>glib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GLIB_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\glib\proxy-libintl\libintl.c" />
+    <ClCompile Include="..\..\glib\deprecated\gallocator.c" />
+    <ClCompile Include="..\..\glib\deprecated\gcache.c" />
+    <ClCompile Include="..\..\glib\deprecated\gcompletion.c" />
+    <ClCompile Include="..\..\glib\deprecated\grel.c" />
+    <ClCompile Include="..\..\glib\deprecated\gthread-deprecated.c" />
+    <ClCompile Include="..\..\glib\garray.c" />
+    <ClCompile Include="..\..\glib\gasyncqueue.c" />
+    <ClCompile Include="..\..\glib\gatomic.c" />
+    <ClCompile Include="..\..\glib\gbacktrace.c" />
+    <ClCompile Include="..\..\glib\gbase64.c" />
+    <ClCompile Include="..\..\glib\gbitlock.c" />
+    <ClCompile Include="..\..\glib\gbookmarkfile.c" />
+    <ClCompile Include="..\..\glib\gbytes.c" />
+    <ClCompile Include="..\..\glib\gcharset.c" />
+    <ClCompile Include="..\..\glib\gchecksum.c" />
+    <ClCompile Include="..\..\glib\gconvert.c" />
+    <ClCompile Include="..\..\glib\gdataset.c" />
+    <ClCompile Include="..\..\glib\gdate.c" />
+    <ClCompile Include="..\..\glib\gdatetime.c" />
+    <ClCompile Include="..\..\glib\gdir.c" />
+    <ClCompile Include="..\..\glib\genviron.c" />
+    <ClCompile Include="..\..\glib\gerror.c" />
+    <ClCompile Include="..\..\glib\gfileutils.c" />
+    <ClCompile Include="..\..\glib\ggettext.c" />
+    <ClCompile Include="..\..\glib\ghash.c" />
+    <ClCompile Include="..\..\glib\ghmac.c" />
+    <ClCompile Include="..\..\glib\ghook.c" />
+    <ClCompile Include="..\..\glib\ghostutils.c" />
+    <ClCompile Include="..\..\glib\giochannel.c" />
+    <ClCompile Include="..\..\glib\gkeyfile.c" />
+    <ClCompile Include="..\..\glib\glib-init.c" />
+    <ClCompile Include="..\..\glib\glib-private.c" />
+    <ClCompile Include="..\..\glib\glist.c" />
+    <ClCompile Include="..\..\glib\gmain.c" />
+    <ClCompile Include="..\..\glib\gmappedfile.c" />
+    <ClCompile Include="..\..\glib\gmarkup.c" />
+    <ClCompile Include="..\..\glib\gmem.c" />
+    <ClCompile Include="..\..\glib\gmessages.c" />
+    <ClCompile Include="..\..\glib\gnode.c" />
+    <ClCompile Include="..\..\glib\goption.c" />
+    <ClCompile Include="..\..\glib\gpattern.c" />
+    <ClCompile Include="..\..\glib\gpoll.c" />
+    <ClCompile Include="..\..\glib\gprimes.c" />
+    <ClCompile Include="..\..\glib\gqsort.c" />
+    <ClCompile Include="..\..\glib\gquark.c" />
+    <ClCompile Include="..\..\glib\gqueue.c" />
+    <ClCompile Include="..\..\glib\grand.c" />
+    <ClCompile Include="..\..\glib\gregex.c" />
+    <ClCompile Include="..\..\glib\gscanner.c" />
+    <ClCompile Include="..\..\glib\gsequence.c" />
+    <ClCompile Include="..\..\glib\gshell.c" />
+    <ClCompile Include="..\..\glib\gslice.c" />
+    <ClCompile Include="..\..\glib\gslist.c" />
+    <ClCompile Include="..\..\glib\gstdio.c" />
+    <ClCompile Include="..\..\glib\gstrfuncs.c" />
+    <ClCompile Include="..\..\glib\gstring.c" />
+    <ClCompile Include="..\..\glib\gstringchunk.c" />
+    <ClCompile Include="..\..\glib\gtestutils.c" />
+    <ClCompile Include="..\..\glib\gthread.c" />
+    <ClCompile Include="..\..\glib\gthreadpool.c" />
+    <ClCompile Include="..\..\glib\gtimer.c" />
+    <ClCompile Include="..\..\glib\gtimezone.c" />
+    <ClCompile Include="..\..\glib\gtranslit.c" />
+    <ClCompile Include="..\..\glib\gtrashstack.c" />
+    <ClCompile Include="..\..\glib\gtree.c" />
+    <ClCompile Include="..\..\glib\guniprop.c" />
+    <ClCompile Include="..\..\glib\gutf8.c" />
+    <ClCompile Include="..\..\glib\gunibreak.c" />
+    <ClCompile Include="..\..\glib\gunicollate.c" />
+    <ClCompile Include="..\..\glib\gunidecomp.c" />
+    <ClCompile Include="..\..\glib\gurifuncs.c" />
+    <ClCompile Include="..\..\glib\gutils.c" />
+    <ClCompile Include="..\..\glib\gvariant.c" />
+    <ClCompile Include="..\..\glib\gvariant-core.c" />
+    <ClCompile Include="..\..\glib\gvariant-parser.c" />
+    <ClCompile Include="..\..\glib\gvariant-serialiser.c" />
+    <ClCompile Include="..\..\glib\gvarianttypeinfo.c" />
+    <ClCompile Include="..\..\glib\gvarianttype.c" />
+    <ClCompile Include="..\..\glib\gversion.c" />
+    <ClCompile Include="..\..\glib\gwakeup.c" />
+    <ClCompile Include="..\..\glib\gprintf.c" />
+    <ClCompile Include="..\..\glib\giowin32.c" />
+    <ClCompile Include="..\..\glib\gspawn-win32.c" />
+    <ClCompile Include="..\..\glib\gthread-win32.c" />
+    <ClCompile Include="..\..\glib\gwin32.c" />
+    <ClCompile Include="..\..\glib\libcharset\localcharset.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\gnulib\asnprintf.c" />
+    <ClCompile Include="..\..\glib\gnulib\printf-args.c" />
+    <ClCompile Include="..\..\glib\gnulib\printf-parse.c" />
+    <ClCompile Include="..\..\glib\gnulib\printf.c" />
+    <ClCompile Include="..\..\glib\gnulib\vasnprintf.c" />
+    <ClCompile Include="..\..\glib\pcre\pcre_byte_order.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_chartables.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_compile.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_config.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_dfa_exec.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_exec.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_fullinfo.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_get.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_globals.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_jit_compile.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_newline.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_ord2utf8.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_string_utils.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_study.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_tables.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_valid_utf8.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_version.c">
+    </ClCompile>
+    <ClCompile Include="..\..\glib\pcre\pcre_xclass.c">
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)..\glib;$(SolutionDir)..\gio;$(SolutionDir)..\proxy-libintl;$(SolutionDir)..\gmodule;$(SolutionDir)..\;$(SolutionDir)include\zlib;$(SolutionDir)include\libffi;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\libffi;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>msvc_recommended_pragmas.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile>
+      <PreprocessorDefinitions>FFI_BUILDING;G_LOG_DOMAIN="glib";G_OS_WIN32;LINK_SIZE=2;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;MAX_DUPLENGTH=30000;PCRE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;Usp10.lib;Ws2_32.lib;libffi$(MazoeaName).lib;zlib$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\libffi;$(SolutionDir)libs\zlib;$(SolutionDir)\libs\vld\lib\$(PlatformName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

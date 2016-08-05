@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-MTDLL|Win32">
+      <Configuration>Debug-MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MTDLL|x64">
+      <Configuration>Debug-MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MT|Win32">
+      <Configuration>Debug-MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-MT|x64">
+      <Configuration>Debug-MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MTDLL|Win32">
+      <Configuration>Release-MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MTDLL|x64">
+      <Configuration>Release-MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MT|Win32">
+      <Configuration>Release-MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-MT|x64">
+      <Configuration>Release-MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4214047C-F5C1-40B3-8369-5DCED8C32770}</ProjectGuid>
+    <RootNamespace>gmodule</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win32.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="PropertySheets">
+    <Import Project="$(ProjectDir)/../vsprops-base/base.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/$(Configuration).props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/os-generic.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/win64.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/mp.props" />
+    <Import Project="$(ProjectDir)/../vsprops-base/dll.props" />
+    <Import Project="$(ProjectDir)/../vsprops/project.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>libffi$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'">
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gmodule\gmodule.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\gmodule\gmoduleconf.h.win32">
+      <Message>Copying gmoduleconf.h from gmoduleconf.h.win32...</Message>
+      <Command>$(GenGModuleConfH)</Command>
+      <Outputs>..\..\gmodule\gmoduleconf.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\gmodule\gmodule.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="glib.vcxproj">
+      <Project>{12bca020-eabf-429e-876a-a476bc9c10c0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

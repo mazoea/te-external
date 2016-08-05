@@ -96,8 +96,8 @@
 #include <locale.h>
 #include <errno.h>
 #include <sys/types.h>
-#include <sys/socket.h>
-#include <sys/un.h>
+//#include <sys/socket.h>
+//#include <sys/un.h>
 
 #include "glib-init.h"
 #include "galloca.h"
