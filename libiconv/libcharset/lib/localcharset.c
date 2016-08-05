@@ -74,9 +74,9 @@
 #endif
 
 /* Get LIBDIR.  */
-#ifndef LIBDIR
-# include "configmake.h"
-#endif
+//#ifndef LIBDIR
+//# include "configmake.h"
+//#endif
 
 /* Define O_NOFOLLOW to 0 on platforms where it does not exist.  */
 #ifndef O_NOFOLLOW
