@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freetype", "vcx\project.vcxproj", "{7D97EECE-3548-42C5-9C78-BA67BBB9F526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug-MT|Win32 = Debug-MT|Win32
+		Debug-MT|x64 = Debug-MT|x64
+		Debug-MTDLL|Win32 = Debug-MTDLL|Win32
+		Debug-MTDLL|x64 = Debug-MTDLL|x64
+		Release-MT|Win32 = Release-MT|Win32
+		Release-MT|x64 = Release-MT|x64
+		Release-MTDLL|Win32 = Release-MTDLL|Win32
+		Release-MTDLL|x64 = Release-MTDLL|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MT|Win32.ActiveCfg = Debug-MT|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MT|Win32.Build.0 = Debug-MT|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MT|x64.ActiveCfg = Debug-MT|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MT|x64.Build.0 = Debug-MT|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MTDLL|Win32.ActiveCfg = Debug-MTDLL|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MTDLL|Win32.Build.0 = Debug-MTDLL|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MTDLL|x64.ActiveCfg = Debug-MTDLL|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Debug-MTDLL|x64.Build.0 = Debug-MTDLL|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MT|Win32.ActiveCfg = Release-MT|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MT|Win32.Build.0 = Release-MT|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MT|x64.ActiveCfg = Release-MT|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MT|x64.Build.0 = Release-MT|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MTDLL|Win32.ActiveCfg = Release-MTDLL|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MTDLL|Win32.Build.0 = Release-MTDLL|Win32
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MTDLL|x64.ActiveCfg = Release-MTDLL|x64
+		{7D97EECE-3548-42C5-9C78-BA67BBB9F526}.Release-MTDLL|x64.Build.0 = Release-MTDLL|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
