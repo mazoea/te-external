@@ -1021,7 +1021,7 @@ uprv_convertToPosix(uint32_t hostid, char *posixID, int32_t posixIDCapacity, UEr
 #ifdef USE_WINDOWS_LOCALE_API
     int32_t tmpLen = 0;
     char locName[157];  /* ULOC_FULLNAME_CAPACITY */
-
+#define LOCALE_SNAME                0x005C
     tmpLen = GetLocaleInfoA(hostid, LOCALE_SNAME, (LPSTR)locName, UPRV_LENGTHOF(locName));
     if (tmpLen > 1) {
         /* Windows locale name may contain sorting variant, such as "es-ES_tradnl".
