@@ -1,6 +1,6 @@
 freetype-*
 lpng1*
-libpng*
+libpng-*
 zlib-*
 jpeg-*
 giflib-*
@@ -17,6 +17,9 @@ libxml2-*
 pango-*
 pixman-*
 
+*/libs/
+*/*/vsprops-base
+
 
 *.sdf
 *.suo
@@ -24,8 +27,9 @@ pixman-*
 ipch
 *.opensdf
 *.opendb
-*/projects/include
-*/projects/libs
+*.VC.db
+*/projects/include/*
+*/projects/libs/*
 */projects/output
 **/objs/**
 **/Debug-*
@@ -37,3 +41,6 @@ ipch
 *.xz
 *.tgz
 *.bz2
+
+!*/projects/include/__create_links.bat
+!*/projects/libs/__create_links.bat
