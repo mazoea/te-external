@@ -57,3 +57,8 @@ cairo-mtdll-x64.lib
 
 Do not use UNICODE (https://msdn.microsoft.com/en-us/library/cwe8bzh0.aspx) because some of the libraries are 
 not prepared for that...
+
+
+# Credits
+
+All the developers of the projects and Mazoea s.r.o. - https://mazoea.com/ .
