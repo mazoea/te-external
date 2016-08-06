@@ -1,6 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtiff", "vcx\project.vcxproj", "{7D97EECE-3548-42C5-9C78-BA67BBB9F526}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "vcx\project.vcxproj", "{7D97EECE-3548-42C5-9C78-BA67BBB9F526}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "vcx\test.vcxproj", "{68EBD9AD-4C7F-472C-9512-A77F2655B21E}"
 EndProject
