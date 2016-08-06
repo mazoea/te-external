@@ -22,6 +22,8 @@ However, there shouldn't be any need for that.
 
 Execute 
 ```
+cd te-external
+xcopy /S /I _vsprops-base ..\c++template\projects\vsprops-base
 python create_links.py
 ```
 and then manually build the solutions :) (in correct order) or use te-builder as in appveyor.yml.
@@ -30,6 +32,7 @@ and then manually build the solutions :) (in correct order) or use te-builder as
 
 Every project will have a libs directory with e.g.,:
 ```
+...
 cairo-debug-mt-x32.dll
 cairo-debug-mt-x32.exp
 cairo-debug-mt-x32.lib
@@ -47,6 +50,7 @@ cairo-mtdll-x32.dll
 cairo-mtdll-x32.lib
 cairo-mtdll-x64.dll
 cairo-mtdll-x64.lib
+...
 ```    
 
 # Don't DO
