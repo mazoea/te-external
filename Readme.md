@@ -2,7 +2,7 @@
 
 # Overview
 
-Various dependencies of other projects provdied in a unified, easily configurable VS 2015 way happily brought to you by Mazoea s.r.o.
+Various dependencies of other projects provided in a unified, easily configurable VS 2015 way happily brought to you by Mazoea s.r.o.
 
 # Who is it for
 
