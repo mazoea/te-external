@@ -15,8 +15,6 @@ before_build:
   - cd %APPVEYOR_BUILD_FOLDER%
   - xcopy /S /I _vsprops-base ..\c++template\projects\vsprops-base
   - python create_links.py
-  - dir C:\mazoea\installation\te-external\zlib\projects\
-  - dir C:\mazoea\installation\te-external\zlib\projects\vsprops-base\
   - cd ..
   - git clone --depth=1 https://github.com/mazoea/te-builder.git te-builder
   - cd te-builder\src
