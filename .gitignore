@@ -1,21 +1,21 @@
-freetype-*
-lpng1*
-libpng-*
-zlib-*
-jpeg-*
-giflib-*
-tiff-*
-cairo-*
-fontconfig-*
-gettext
-glib-*
-harfbuzz-*
-icu-*
-libffi-*
-libiconv-*
-libxml2-*
-pango-*
-pixman-*
+/freetype-*
+/lpng1*
+/libpng-*
+/zlib-*
+/jpeg-*
+/giflib-*
+/tiff-*
+/cairo-*
+/fontconfig-*
+/gettext
+/glib-*
+/harfbuzz-*
+/icu-*
+/libffi-*
+/libiconv-*
+/libxml2-*
+/pango-*
+/pixman-*
 
 */libs/
 */*/vsprops-base
@@ -48,3 +48,4 @@ ipch
 
 icu/source/stubdata/
 !_vsprops-base/*
+!glib/glib/glib-*
