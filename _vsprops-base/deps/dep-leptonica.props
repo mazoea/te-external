@@ -5,6 +5,9 @@
     <LibraryPath>$(SolutionDir)\libs\leptonica;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>LIBLEPT_IMPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
     <Lib>
       <AdditionalDependencies>liblept$(MazoeaName).lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>

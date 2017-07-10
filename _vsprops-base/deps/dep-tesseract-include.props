@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)\include\tesseract;$(SolutionDir)\include\tesseract\api;$(SolutionDir)\include\tesseract\ccstruct;$(SolutionDir)\include\tesseract\ccutil;$(SolutionDir)\include\tesseract\leptonica;$(SolutionDir)\include\tesseract\ccmain;$(SolutionDir)\include\tesseract\projects\include\generic;$(SolutionDir)\include\leptonica;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+</Project>
