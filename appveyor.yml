@@ -18,7 +18,7 @@ before_build:
   - cd ..
   - git clone --depth=1 https://github.com/mazoea/te-builder.git te-builder
   - cd te-builder\src
-  - python main.py --settings=externals_only.json
+  - python main.py --settings=externals.json
 
 build_script:
   - mkdir build
