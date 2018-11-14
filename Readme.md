@@ -20,13 +20,14 @@ However, there shouldn't be any need for that.
 
 # How
 
-Execute 
+Execute
 ```
 cd te-external
-xcopy /S /I _vsprops-base ..\c++template\projects\vsprops-base
+xcopy /S /I _vsprops-base ..\cpp-template\projects\vsprops-base
 python create_links.py
 ```
-and then manually build the solutions :) (in correct order) or use te-builder as in appveyor.yml.
+and then manually build the solutions in the correct order :).
+Or better use `https://github.com/mazoea/te-builder` as in appveyor.yml.
 
 # What will you get
 

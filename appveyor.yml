@@ -13,7 +13,7 @@ matrix:
 
 before_build:
   - cd %APPVEYOR_BUILD_FOLDER%
-  - xcopy /S /I _vsprops-base ..\c++template\projects\vsprops-base
+  - xcopy /S /I _vsprops-base ..\cpp-template\projects\vsprops-base
   - python create_links.py
   - cd ..
   - git clone --depth=1 https://github.com/mazoea/te-builder.git te-builder
