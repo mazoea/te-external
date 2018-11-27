@@ -17,9 +17,9 @@ def _before_run_ci(root, batch):
 
 
 def _run(root, batch):
-    if os.environ.get("APPVEYOR") is not None:
-        root, batch = _before_run_ci(root, batch) 
-    print "Executing [%s] in [%s]" % (batch, root)
+    # if os.environ.get("APPVEYOR") is not None:
+    root, batch = _before_run_ci(root, batch) 
+    print("Executing [%s] in [%s]" % (batch, root))
     os.chdir(os.path.join(this_dir, root))
     os.system("%s nopause" % batch)
     os.chdir(this_dir)
