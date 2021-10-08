@@ -41,35 +41,35 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MTDLL|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-MT|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-MT|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-MTDLL|Win32'" Label="PropertySheets">
@@ -196,21 +196,21 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\autofit\autofit.c" />
     <ClCompile Include="..\..\src\bdf\bdf.c" />
-    <ClCompile Include="..\..\src\cff\cff.c"/>
-    <ClCompile Include="..\..\src\base\ftbase.c"/>
+    <ClCompile Include="..\..\src\cff\cff.c" />
+    <ClCompile Include="..\..\src\base\ftbase.c" />
     <ClCompile Include="..\..\src\base\ftbitmap.c" />
-    <ClCompile Include="..\..\src\cache\ftcache.c"/>
+    <ClCompile Include="..\..\src\cache\ftcache.c" />
     <ClCompile Include="..\..\src\base\ftfstype.c" />
     <ClCompile Include="..\..\src\base\ftgasp.c" />
-    <ClCompile Include="..\..\src\base\ftglyph.c"/>
-    <ClCompile Include="..\..\src\gzip\ftgzip.c"/>
-    <ClCompile Include="..\..\src\base\ftinit.c"/>
-    <ClCompile Include="..\..\src\lzw\ftlzw.c"/>
+    <ClCompile Include="..\..\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\..\src\base\ftinit.c" />
+    <ClCompile Include="..\..\src\lzw\ftlzw.c" />
     <ClCompile Include="..\..\src\base\ftstroke.c" />
-    <ClCompile Include="..\..\src\base\ftsystem.c"/>
-    <ClCompile Include="..\..\src\smooth\smooth.c"/>
+    <ClCompile Include="..\..\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\src\smooth\smooth.c" />
     <ClCompile Include="..\..\src\base\ftbbox.c" />
-    <ClCompile Include="..\..\src\base\ftmm.c"/>
+    <ClCompile Include="..\..\src\base\ftmm.c" />
     <ClCompile Include="..\..\src\base\ftpfr.c" />
     <ClCompile Include="..\..\src\base\ftsynth.c" />
     <ClCompile Include="..\..\src\base\fttype1.c" />
@@ -220,18 +220,18 @@
     <ClCompile Include="..\..\src\base\ftgxval.c" />
     <ClCompile Include="..\..\src\base\ftotval.c" />
     <ClCompile Include="..\..\src\base\ftpatent.c" />
-    <ClCompile Include="..\..\src\pcf\pcf.c"/>
-    <ClCompile Include="..\..\src\pfr\pfr.c"/>
-    <ClCompile Include="..\..\src\psaux\psaux.c"/>
-    <ClCompile Include="..\..\src\pshinter\pshinter.c"/>
-    <ClCompile Include="..\..\src\psnames\psmodule.c"/>
-    <ClCompile Include="..\..\src\raster\raster.c"/>
-    <ClCompile Include="..\..\src\sfnt\sfnt.c"/>
-    <ClCompile Include="..\..\src\truetype\truetype.c"/>
-    <ClCompile Include="..\..\src\type1\type1.c"/>
-    <ClCompile Include="..\..\src\cid\type1cid.c"/>
-    <ClCompile Include="..\..\src\type42\type42.c"/>
-    <ClCompile Include="..\..\src\winfonts\winfnt.c"/>
+    <ClCompile Include="..\..\src\pcf\pcf.c" />
+    <ClCompile Include="..\..\src\pfr\pfr.c" />
+    <ClCompile Include="..\..\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\src\psnames\psmodule.c" />
+    <ClCompile Include="..\..\src\raster\raster.c" />
+    <ClCompile Include="..\..\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\src\type1\type1.c" />
+    <ClCompile Include="..\..\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\src\type42\type42.c" />
+    <ClCompile Include="..\..\src\winfonts\winfnt.c" />
     <ClInclude Include="..\..\include\ft2build.h" />
     <ClInclude Include="..\..\include\config\ftconfig.h" />
     <ClInclude Include="..\..\include\config\ftheader.h" />
