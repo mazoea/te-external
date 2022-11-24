@@ -49,3 +49,5 @@ ipch
 icu/source/stubdata/
 !_vsprops-base/*
 !glib/glib/glib-*
+
+*/*/__create_links.bat.subst.bat
