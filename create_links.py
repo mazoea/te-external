@@ -1,6 +1,7 @@
 # coding=utf-8
 import logging
 import os
+import re
 import glob
 import argparse
 
@@ -54,7 +55,9 @@ if __name__ == '__main__':
             pass
 
     ifiles = glob.glob(os.path.join(_this_dir, "**", file_to_execute), recursive=True)
-    to_execute = [x for x in sorted(list(ifiles)) if "include" not in x]
+    # do not descend into include directories
+    rec_incl = re.compile(r"/include/.+/.+")
+    to_execute = [x for x in sorted(list(ifiles)) if rec_incl.search(x.replace("\\", "/")) is None]
     _logger.info(f"Found [{len(to_execute)}] [{file_to_execute}]")
 
     for f in to_execute:
