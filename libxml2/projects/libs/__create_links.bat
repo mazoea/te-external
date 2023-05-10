@@ -1,4 +1,4 @@
-junction libiconv "..\..\..\libiconv\libs"
+mklink /j libiconv "..\..\..\libiconv\libs"
 
 IF "%1"=="nopause" GOTO No1
     pause

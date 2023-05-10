@@ -23,7 +23,6 @@ However, there shouldn't be any need for that.
 Execute
 ```
 cd te-external
-xcopy /S /I _vsprops-base ..\cpp-template\projects\vsprops-base
 python create_links.py
 ```
 and then manually build the solutions in the correct order :).

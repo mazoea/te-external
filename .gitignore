@@ -51,3 +51,4 @@ icu/source/stubdata/
 !glib/glib/glib-*
 
 */*/__create_links.bat.subst.bat
+.vs

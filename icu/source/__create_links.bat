@@ -1,4 +1,4 @@
-junction vsprops-base ..\..\..\cpp-template\projects\vsprops-base\
+mklink /j vsprops-base ..\..\_vsprops-base
 
 IF "%1"=="nopause" GOTO No1
     pause

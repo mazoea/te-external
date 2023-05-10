@@ -1,46 +1,39 @@
 # coding=utf-8
-import sys
+import logging
 import os
 import glob
 import argparse
-this_dir = os.path.dirname(os.path.abspath(__file__))
-
-execute = "__create_links.bat"
-
-src_dir = "vsprops-base"
-to_replace_target = "..\\..\\..\\cpp-template\\projects\\vsprops-base\\"
-
-def _before_run_ci(root, batch, target):
-    with open(os.path.join(root, batch), mode="r") as fin:
-        t = fin.read()
-    subst_batch = batch + ".subst.bat"
-    t = t.replace("junction", "mklink /j")
-    if len(target or "") > 0:
-        t_orig = t
-        t = t.replace(to_replace_target, target)
-        # if t == t_orig:
-        #     print("Invalid replace:\n%s" % t)
-        #     sys.exit(1)
-
-    with open(os.path.join(root, subst_batch), mode="w+") as fout:
-        fout.write(t)
-    return root, subst_batch
 
 
-def _run(root, batch, target=""):
-    # if os.environ.get("APPVEYOR") is not None:
-    root, batch = _before_run_ci(root, batch, target=target)
-    print("Executing [%s] in [%s]" % (batch, root))
-    os.chdir(os.path.join(this_dir, root))
-    abs_src_dir = os.path.join(this_dir, root, src_dir)
-    try:
-        os.remove(abs_src_dir)
-    except Exception as e:
-        print("Cannot delete [%s] [%s]" % (abs_src_dir, repr(e)))
-        pass
 
-    os.system("%s nopause" % batch)
-    os.chdir(this_dir)
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s %(levelname)s %(message)s')
+_logger = logging.getLogger()
+_this_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+file_to_execute = "__create_links.bat"
+dir_vsprops = "vsprops-base"
+
+# 2023: replaced original batch with mklink, this is not needed anymore
+# to_replace_target = "..\\..\\..\\cpp-template\\projects\\vsprops-base\\"
+# def _before_run_ci(root, batch, target):
+#     orig_batch = os.path.join(root, batch)
+#     with open(orig_batch, mode="r", encoding="utf-8") as fin:
+#         t = fin.read()
+#     subst_batch = batch + ".subst.bat"
+#     t = t.replace("junction", "mklink /j")
+#     if len(target or "") > 0:
+#         t_orig = t
+#         t = t.replace(to_replace_target, target)
+#         # if t == t_orig:
+#         #     print("Invalid replace:\n%s" % t)
+#         #     sys.exit(1)
+
+#     new_batch = os.path.join(root, subst_batch)
+#     with open(orig_batch, mode="w+", encoding="utf-8", newline="\r\n") as fout:
+#         fout.write(t)
+#     return root, subst_batch
 
 
 if __name__ == '__main__':
@@ -49,11 +42,25 @@ if __name__ == '__main__':
                         type=str, required=False, default=r"..\..\_vsprops-base")
     flags = parser.parse_args()
 
-    for one_dir in glob.glob("*"):
-        # orig directories
-        if "-" in one_dir:
-            continue
-        # exe batches
-        for _root, _1, _files in os.walk(one_dir):
-            if execute in _files:
-                _run(_root, execute, target=flags.target)
+    # remove all vsprops
+    ifiles = glob.glob(os.path.join(_this_dir, "**", dir_vsprops), recursive=True)
+    dirs = sorted(list(ifiles))
+    _logger.info(f"Found [{len(dirs)}] [{dir_vsprops}]")
+    for d in dirs:
+        try:
+            os.remove(d)
+        except Exception as e:
+            _logger.warning(f"Cannot delete [{d}] [{e}]")
+            pass
+
+    ifiles = glob.glob(os.path.join(_this_dir, "**", file_to_execute), recursive=True)
+    to_execute = [x for x in sorted(list(ifiles)) if "include" not in x]
+    _logger.info(f"Found [{len(to_execute)}] [{file_to_execute}]")
+
+    for f in to_execute:
+        base_dir = os.path.dirname(f)
+        _logger.info(f"Executing [{f}] in [{base_dir}]")
+        os.chdir(base_dir)
+        os.system(f"{f} nopause")
+        os.chdir(_this_dir)
+        # input("!!")

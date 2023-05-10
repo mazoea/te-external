@@ -1,6 +1,6 @@
-junction freetype ..\..\..\freetype\
-junction libiconv ..\..\..\libiconv\include
-junction libxml2 ..\..\..\libxml2\include
+mklink /j freetype ..\..\..\freetype\
+mklink /j libiconv ..\..\..\libiconv\include
+mklink /j libxml2 ..\..\..\libxml2\include
 
 IF "%1"=="nopause" GOTO No1
     pause
